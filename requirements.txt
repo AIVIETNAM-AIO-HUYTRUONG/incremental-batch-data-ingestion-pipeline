@@ -1,0 +1,17 @@
+# Tien ich dung chung
+python-dotenv>=1.0.1
+PyYAML>=6.0.1
+requests>=2.31.0
+
+# crawl_yt_video_audio
+google-api-python-client>=2.126.0
+yt-dlp>=2024.8.6
+
+# Luu y: yt-dlp can ffmpeg duoc cai san tren he thong (khong phai package
+# python) de ghep luong video+audio va chuyen doi dinh dang.
+#   Windows : choco install ffmpeg   (hoac tai tu https://ffmpeg.org)
+#   macOS   : brew install ffmpeg
+#   Linux   : sudo apt install ffmpeg
+
+# Kiem thu (khong bat buoc khi chay production, chi can khi phat trien)
+pytest>=8.0.0

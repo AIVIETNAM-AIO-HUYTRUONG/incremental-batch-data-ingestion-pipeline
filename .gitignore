@@ -1,0 +1,17 @@
+.env
+*/.env
+
+data_lake_local/**
+!data_lake_local/**/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+.venv/
+venv/
