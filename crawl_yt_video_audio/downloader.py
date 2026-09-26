@@ -266,18 +266,18 @@ def download_assets(
                 )
 
                 logger.info(
-                    "Da tai xong video %s",
+                    "Đã tải xong video %s",
                     video_id,
                 )
             else:
                 logger.warning(
-                    "Video %s khong tai duoc video/audio.",
+                    "Video %s không tải được video/audio.",
                     video_id,
                 )
 
         except Exception:
             logger.exception(
-                "Loi khi tai video %s, "
-                "bo qua va tiep tuc video tiep theo.",
+                "Lỗi tải video %s, "
+                "bỏ qua và tiếp tục video tiếp theo.",
                 video_id,
             )
