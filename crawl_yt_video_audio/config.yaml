@@ -1,0 +1,18 @@
+# Cau hinh crawler YouTube.
+# Can YOUTUBE_API_KEY trong file .env (xem .env.example).
+
+query: "AI Research Papers" # Tu khoa tim kiem
+days_back: 1 # Chi lay video dang trong N ngay gan nhat
+min_duration_seconds: 120 # 2 phut
+max_duration_seconds: 720 # 12 phut
+require_english: true # Chi lay video co dau hieu tieng Anh
+exclude_shorts: true # Bo qua YouTube Shorts
+max_results: 10 # So video toi da tai moi lan chay
+relevance_language: "en" # Chi anh huong THU HANG ket qua tim kiem, khong loc chat
+search_timeout_seconds: 60 # Thoi gian toi da danh cho buoc tim kiem (tranh vong lap vo han)
+
+download:
+  # Uu tien video mp4 <=1080p ghep voi audio m4a rieng, fallback ve best co san
+  video_format: "bestvideo[ext=mp4][height<=1080]+bestaudio[ext=m4a]/best[ext=mp4]/best"
+  audio_format: "bestaudio[ext=m4a]/bestaudio"
+  subtitle_langs: ["en"]

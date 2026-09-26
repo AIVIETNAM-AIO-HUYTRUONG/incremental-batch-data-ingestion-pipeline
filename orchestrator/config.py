@@ -9,14 +9,10 @@ print(REPO_ROOT)
 
 JOB_SCRIPTS = {
   "yt":REPO_ROOT/"crawl_yt_video_audio"/"main.py",
-  # "arxiv": REPO_ROOT / "crawl_arxiv" / "main.py",
-  # "unsplash": REPO_ROOT / "crawl_unsplash" / "main.py",
 }
 
 JOB_ORDER = [
-  # "arxiv",
   "yt",
-  # "unsplash"
 ]
 
 LOG_DIR = REPO_ROOT / "data_lake_local" / "_orchestrator_logs"
